@@ -64,14 +64,6 @@ public class PairStore {
     }
 
     /**
-     * Returns how many pairs are stored
-     * @return The number of pairs stored in the arrays
-     */
-    public int size() {
-        return position;
-    }
-
-    /**
      * Adds a new pair to the arrays
      * @param s1 The left hand value to store
      * @param s2 The right hand value to store
@@ -100,7 +92,6 @@ public class PairStore {
                 value = values[i];
                 if(value.equals(s2)) {
                     value = keys[i];
-                    System.out.print("Searching for " + s2 + ", found ");
                     return value;
                 }
             }
@@ -108,7 +99,6 @@ public class PairStore {
                 value = keys[i];
                 if(value.equals(s1)) {
                     value = values[i];
-                    System.out.print("Searching for " + s1 + ", found ");
                     return value;
                 }
             }

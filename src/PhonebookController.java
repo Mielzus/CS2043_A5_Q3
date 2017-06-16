@@ -18,7 +18,7 @@ public class PhonebookController {
             phonebookView.showAddSuccess();
         }
         else if(command.equals("searchName")) {
-            phonebookView.showSearchResults("Name for person with Name = " + phonebookView.getInputName() + " is "
+            phonebookView.showSearchResults("Phone for person with Name = " + phonebookView.getInputName() + " is "
                     + phonebookModel.searchName(phonebookView.getInputName()));
         }
         else if(command.equals("searchPhone")) {
